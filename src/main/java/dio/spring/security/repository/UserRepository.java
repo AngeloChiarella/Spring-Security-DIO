@@ -11,4 +11,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	@Query("SELECT u FROM User u JOIN FETCH u.roles WHERE u.username LIKE %:username%")
 	public User findByUsername(@Param("username") String username);
 
+	boolean existsByUsername(String username);
+
 }
