@@ -1,4 +1,4 @@
-package dio.spring.security.config;
+package dio.spring.config;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,8 +11,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import dio.spring.security.model.User;
-import dio.spring.security.repository.UserRepository;
+import dio.spring.model.User;
+import dio.spring.repository.UserRepository;
 
 @Service
 public class SecurityDatabaseService implements UserDetailsService {

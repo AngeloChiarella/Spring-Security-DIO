@@ -1,4 +1,4 @@
-package dio.spring.security.init;
+package dio.spring.init;
 
 import javax.transaction.Transactional;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import dio.spring.security.model.User;
-import dio.spring.security.repository.UserRepository;
+import dio.spring.model.User;
+import dio.spring.repository.UserRepository;
 
 @Component
 public class StartApplication implements CommandLineRunner {

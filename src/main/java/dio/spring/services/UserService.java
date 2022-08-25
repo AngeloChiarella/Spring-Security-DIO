@@ -1,11 +1,11 @@
-package dio.spring.security.services;
+package dio.spring.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import dio.spring.security.model.User;
-import dio.spring.security.repository.UserRepository;
+import dio.spring.model.User;
+import dio.spring.repository.UserRepository;
 
 @Service
 public class UserService {

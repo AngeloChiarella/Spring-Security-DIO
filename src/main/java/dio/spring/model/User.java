@@ -1,4 +1,4 @@
-package dio.spring.security.model;
+package dio.spring.model;
 
 import java.util.ArrayList;
 import java.util.List;
