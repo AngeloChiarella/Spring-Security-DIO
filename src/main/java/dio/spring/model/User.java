@@ -19,7 +19,7 @@ import javax.persistence.Table;
 public class User {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_user")
 	private Integer id;
 
@@ -36,14 +36,6 @@ public class User {
 	@CollectionTable(name = "tab_user_roles", joinColumns = @JoinColumn(name = "user_id"))
 	@Column(name = "role_id")
 	private List<String> roles = new ArrayList<>();
-
-	public User() {
-
-	}
-
-	public User(String username) {
-		this.username = username;
-	}
 
 	public Integer getId() {
 		return id;
@@ -84,5 +76,4 @@ public class User {
 	public void setRoles(List<String> roles) {
 		this.roles = roles;
 	}
-
 }

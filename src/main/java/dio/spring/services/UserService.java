@@ -9,18 +9,15 @@ import dio.spring.repository.UserRepository;
 
 @Service
 public class UserService {
-
 	@Autowired
 	private UserRepository repository;
-
-	@Autowired //habilitar criptografia
+	@Autowired
 	private PasswordEncoder encoder;
 
 	public void createUser(User user) {
 		String pass = user.getPassword();
-//		criptografando antes de salvar no banco
+		// criptografando antes de salvar no banco
 		user.setPassword(encoder.encode(pass));
 		repository.save(user);
 	}
-
 }

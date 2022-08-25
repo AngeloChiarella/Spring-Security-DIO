@@ -6,21 +6,19 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConfigurationProperties(prefix = "security.config")
 public class SecurityConfig {
-
 	public static String PREFIX;
 	public static String KEY;
 	public static Long EXPIRATION;
 
-	public static void setPrefix(String prefix) {
+	public void setPrefix(String prefix) {
 		PREFIX = prefix;
 	}
 
-	public static void setKey(String key) {
+	public void setKey(String key) {
 		KEY = key;
 	}
 
-	public static void setExpiration(Long expiration) {
+	public void setExpiration(Long expiration) {
 		EXPIRATION = expiration;
 	}
-
 }

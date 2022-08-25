@@ -12,13 +12,10 @@ import dio.spring.services.UserService;
 @RestController
 @RequestMapping("/users")
 public class UserController {
-
-	@Autowired
-	private UserService service;
-
-	@PostMapping
-	public void postUser(@RequestBody User user) {
-		service.createUser(user);
-	}
-
+    @Autowired
+    private UserService service;
+    @PostMapping
+    public void postUser(@RequestBody User user){
+        service.createUser(user);
+    }
 }
